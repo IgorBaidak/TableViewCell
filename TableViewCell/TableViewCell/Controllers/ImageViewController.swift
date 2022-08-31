@@ -17,7 +17,6 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchImageData()
-        // Do any additional setup after loading the view.
     }
     
     // метод преобразующий стринговый URL адрес в URL
