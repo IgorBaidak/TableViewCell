@@ -17,6 +17,16 @@
 		335D820628BEA0B200993C3A /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335D820528BEA0B200993C3A /* ImageViewController.swift */; };
 		337C87C528BFE12500643641 /* UserTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C87C428BFE12500643641 /* UserTVC.swift */; };
 		337C87C828BFE3EB00643641 /* UserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C87C728BFE3EB00643641 /* UserModels.swift */; };
+		33EA6C6328C336B000733DC0 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6228C336B000733DC0 /* UserDetailViewController.swift */; };
+		33EA6C6528C33E9D00733DC0 /* PostAndComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33EA6C6428C33E9D00733DC0 /* PostAndComments.storyboard */; };
+		33EA6C6728C3400500733DC0 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6628C3400500733DC0 /* PostsTableViewController.swift */; };
+		33EA6C6A28C4C82F00733DC0 /* Api Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6928C4C82F00733DC0 /* Api Constants.swift */; };
+		33EA6C6C28C4D39000733DC0 /* DetailPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6B28C4D39000733DC0 /* DetailPostsViewController.swift */; };
+		33EA6C6E28C4DFAD00733DC0 /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6D28C4DFAD00733DC0 /* AlbumsTableViewController.swift */; };
+		33EA6C7028C4F6C800733DC0 /* DetailAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6F28C4F6C800733DC0 /* DetailAlbumsViewController.swift */; };
+		33EA6C7228C4FCDB00733DC0 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C7128C4FCDB00733DC0 /* CommentsTableViewController.swift */; };
+		33EA6C7428C5020000733DC0 /* DetailCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C7328C5020000733DC0 /* DetailCommentsViewController.swift */; };
+		33EA6C7628C527AE00733DC0 /* TestTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C7528C527AE00733DC0 /* TestTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,16 @@
 		335D820528BEA0B200993C3A /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		337C87C428BFE12500643641 /* UserTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTVC.swift; sourceTree = "<group>"; };
 		337C87C728BFE3EB00643641 /* UserModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModels.swift; sourceTree = "<group>"; };
+		33EA6C6228C336B000733DC0 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		33EA6C6428C33E9D00733DC0 /* PostAndComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostAndComments.storyboard; sourceTree = "<group>"; };
+		33EA6C6628C3400500733DC0 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
+		33EA6C6928C4C82F00733DC0 /* Api Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api Constants.swift"; sourceTree = "<group>"; };
+		33EA6C6B28C4D39000733DC0 /* DetailPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostsViewController.swift; sourceTree = "<group>"; };
+		33EA6C6D28C4DFAD00733DC0 /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
+		33EA6C6F28C4F6C800733DC0 /* DetailAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumsViewController.swift; sourceTree = "<group>"; };
+		33EA6C7128C4FCDB00733DC0 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
+		33EA6C7328C5020000733DC0 /* DetailCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommentsViewController.swift; sourceTree = "<group>"; };
+		33EA6C7528C527AE00733DC0 /* TestTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +84,7 @@
 		3345E81A28BE774B00CE602E /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				33EA6C6828C4C81B00733DC0 /* API */,
 				337C87C628BFE3C400643641 /* Models */,
 				3345E82F28BE77D300CE602E /* Delegates */,
 				3345E83028BE77E500CE602E /* Controllers */,
@@ -91,6 +112,14 @@
 				3345E83428BE7F1A00CE602E /* ActionCollectionViewCell.swift */,
 				335D820528BEA0B200993C3A /* ImageViewController.swift */,
 				337C87C428BFE12500643641 /* UserTVC.swift */,
+				33EA6C6228C336B000733DC0 /* UserDetailViewController.swift */,
+				33EA6C6628C3400500733DC0 /* PostsTableViewController.swift */,
+				33EA6C6B28C4D39000733DC0 /* DetailPostsViewController.swift */,
+				33EA6C7128C4FCDB00733DC0 /* CommentsTableViewController.swift */,
+				33EA6C7328C5020000733DC0 /* DetailCommentsViewController.swift */,
+				33EA6C6D28C4DFAD00733DC0 /* AlbumsTableViewController.swift */,
+				33EA6C6F28C4F6C800733DC0 /* DetailAlbumsViewController.swift */,
+				33EA6C7528C527AE00733DC0 /* TestTVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -99,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				3345E82128BE774B00CE602E /* Main.storyboard */,
+				33EA6C6428C33E9D00733DC0 /* PostAndComments.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,6 +139,14 @@
 				337C87C728BFE3EB00643641 /* UserModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		33EA6C6828C4C81B00733DC0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				33EA6C6928C4C82F00733DC0 /* Api Constants.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33EA6C6528C33E9D00733DC0 /* PostAndComments.storyboard in Resources */,
 				3345E82828BE774C00CE602E /* LaunchScreen.storyboard in Resources */,
 				3345E82528BE774C00CE602E /* Assets.xcassets in Resources */,
 				3345E82328BE774B00CE602E /* Main.storyboard in Resources */,
@@ -183,12 +222,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3345E81C28BE774B00CE602E /* AppDelegate.swift in Sources */,
+				33EA6C6E28C4DFAD00733DC0 /* AlbumsTableViewController.swift in Sources */,
+				33EA6C6C28C4D39000733DC0 /* DetailPostsViewController.swift in Sources */,
 				337C87C828BFE3EB00643641 /* UserModels.swift in Sources */,
+				33EA6C6328C336B000733DC0 /* UserDetailViewController.swift in Sources */,
+				33EA6C7628C527AE00733DC0 /* TestTVC.swift in Sources */,
+				33EA6C7428C5020000733DC0 /* DetailCommentsViewController.swift in Sources */,
 				3345E83328BE7EAB00CE602E /* ActionsCollectionViewController.swift in Sources */,
+				33EA6C6728C3400500733DC0 /* PostsTableViewController.swift in Sources */,
+				33EA6C7228C4FCDB00733DC0 /* CommentsTableViewController.swift in Sources */,
+				33EA6C6A28C4C82F00733DC0 /* Api Constants.swift in Sources */,
 				335D820628BEA0B200993C3A /* ImageViewController.swift in Sources */,
 				3345E83528BE7F1A00CE602E /* ActionCollectionViewCell.swift in Sources */,
 				337C87C528BFE12500643641 /* UserTVC.swift in Sources */,
 				3345E81E28BE774B00CE602E /* SceneDelegate.swift in Sources */,
+				33EA6C7028C4F6C800733DC0 /* DetailAlbumsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

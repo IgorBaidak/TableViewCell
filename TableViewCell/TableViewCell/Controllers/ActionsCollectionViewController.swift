@@ -8,7 +8,7 @@
 import UIKit
 
 
-enum Actions: String, CaseIterable /* позволяет из перечисления сделать массив */ {
+enum Actions: String, CaseIterable /* CaseIterable позволяет из перечисления сделать массив */ {
     case downloadImage = "Download Image"
     case users = "Users"
 }
