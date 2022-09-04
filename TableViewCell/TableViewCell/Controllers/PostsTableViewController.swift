@@ -82,17 +82,14 @@ class PostsTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let delete = posts[indexPath.section]
             posts.remove(at: indexPath.row)
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
-            tableView.reloadData()
         } else if editingStyle == .insert {
             let _ = posts[indexPath.section]
-            
             tableView.insertRows(at: [indexPath], with: .fade)
         }
-        self.tableView.reloadData()
+        tableView.reloadData()
     }
     
 
