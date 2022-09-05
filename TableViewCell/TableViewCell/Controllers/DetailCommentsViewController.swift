@@ -16,11 +16,9 @@ class DetailCommentsViewController: UIViewController {
     @IBOutlet weak var comment: UILabel!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
     }
     
     
@@ -30,7 +28,4 @@ class DetailCommentsViewController: UIViewController {
         email.text = comments?.email
         comment.text = comments?.body
     }
-
-    
-
 }
