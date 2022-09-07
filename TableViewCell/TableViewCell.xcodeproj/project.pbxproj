@@ -17,16 +17,24 @@
 		335D820628BEA0B200993C3A /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335D820528BEA0B200993C3A /* ImageViewController.swift */; };
 		337C87C528BFE12500643641 /* UserTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C87C428BFE12500643641 /* UserTVC.swift */; };
 		337C87C828BFE3EB00643641 /* UserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C87C728BFE3EB00643641 /* UserModels.swift */; };
+		339AE04F28C91EE80080D2C9 /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339AE04E28C91EE80080D2C9 /* AlbumsTableViewController.swift */; };
+		339AE05128C91F290080D2C9 /* AlbumsCollectionCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339AE05028C91F290080D2C9 /* AlbumsCollectionCVC.swift */; };
+		339AE05328C91F600080D2C9 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339AE05228C91F600080D2C9 /* PhotoViewController.swift */; };
+		339AE05628C927220080D2C9 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 339AE05528C927220080D2C9 /* AlamofireImage */; };
+		339AE05828C928E90080D2C9 /* AlbumsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339AE05728C928E90080D2C9 /* AlbumsCollectionViewCell.swift */; };
+		339AE05B28C92B4B0080D2C9 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339AE05A28C92B4B0080D2C9 /* Cache.swift */; };
 		33EA6C6328C336B000733DC0 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6228C336B000733DC0 /* UserDetailViewController.swift */; };
 		33EA6C6528C33E9D00733DC0 /* PostAndComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33EA6C6428C33E9D00733DC0 /* PostAndComments.storyboard */; };
 		33EA6C6728C3400500733DC0 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6628C3400500733DC0 /* PostsTableViewController.swift */; };
 		33EA6C6A28C4C82F00733DC0 /* Api Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6928C4C82F00733DC0 /* Api Constants.swift */; };
 		33EA6C6C28C4D39000733DC0 /* DetailPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6B28C4D39000733DC0 /* DetailPostsViewController.swift */; };
-		33EA6C6E28C4DFAD00733DC0 /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6D28C4DFAD00733DC0 /* AlbumsTableViewController.swift */; };
-		33EA6C7028C4F6C800733DC0 /* DetailAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C6F28C4F6C800733DC0 /* DetailAlbumsViewController.swift */; };
 		33EA6C7228C4FCDB00733DC0 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C7128C4FCDB00733DC0 /* CommentsTableViewController.swift */; };
 		33EA6C7428C5020000733DC0 /* DetailCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C7328C5020000733DC0 /* DetailCommentsViewController.swift */; };
-		33EA6C7628C527AE00733DC0 /* TestTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA6C7528C527AE00733DC0 /* TestTVC.swift */; };
+		33FB6B4628C8A91600F61B84 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 33FB6B4528C8A91600F61B84 /* Alamofire */; };
+		33FB6B4928C8A94A00F61B84 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 33FB6B4828C8A94A00F61B84 /* SwiftyJSON */; };
+		33FB6B4B28C914F300F61B84 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FB6B4A28C914F300F61B84 /* NetworkService.swift */; };
+		33FB6B4D28C91A4900F61B84 /* Albums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FB6B4C28C91A4900F61B84 /* Albums.storyboard */; };
+		33FBF09A28C7CF7800452B59 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBF09928C7CF7800452B59 /* NewPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,16 +50,21 @@
 		335D820528BEA0B200993C3A /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		337C87C428BFE12500643641 /* UserTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTVC.swift; sourceTree = "<group>"; };
 		337C87C728BFE3EB00643641 /* UserModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModels.swift; sourceTree = "<group>"; };
+		339AE04E28C91EE80080D2C9 /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
+		339AE05028C91F290080D2C9 /* AlbumsCollectionCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionCVC.swift; sourceTree = "<group>"; };
+		339AE05228C91F600080D2C9 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		339AE05728C928E90080D2C9 /* AlbumsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewCell.swift; sourceTree = "<group>"; };
+		339AE05A28C92B4B0080D2C9 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		33EA6C6228C336B000733DC0 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		33EA6C6428C33E9D00733DC0 /* PostAndComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostAndComments.storyboard; sourceTree = "<group>"; };
 		33EA6C6628C3400500733DC0 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		33EA6C6928C4C82F00733DC0 /* Api Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api Constants.swift"; sourceTree = "<group>"; };
 		33EA6C6B28C4D39000733DC0 /* DetailPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostsViewController.swift; sourceTree = "<group>"; };
-		33EA6C6D28C4DFAD00733DC0 /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
-		33EA6C6F28C4F6C800733DC0 /* DetailAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumsViewController.swift; sourceTree = "<group>"; };
 		33EA6C7128C4FCDB00733DC0 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		33EA6C7328C5020000733DC0 /* DetailCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommentsViewController.swift; sourceTree = "<group>"; };
-		33EA6C7528C527AE00733DC0 /* TestTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTVC.swift; sourceTree = "<group>"; };
+		33FB6B4A28C914F300F61B84 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		33FB6B4C28C91A4900F61B84 /* Albums.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Albums.storyboard; sourceTree = "<group>"; };
+		33FBF09928C7CF7800452B59 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FB6B4928C8A94A00F61B84 /* SwiftyJSON in Frameworks */,
+				33FB6B4628C8A91600F61B84 /* Alamofire in Frameworks */,
+				339AE05628C927220080D2C9 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +100,7 @@
 		3345E81A28BE774B00CE602E /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				339AE05928C92B3A0080D2C9 /* Cache */,
 				33EA6C6828C4C81B00733DC0 /* API */,
 				337C87C628BFE3C400643641 /* Models */,
 				3345E82F28BE77D300CE602E /* Delegates */,
@@ -108,18 +125,12 @@
 		3345E83028BE77E500CE602E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3345E83228BE7EAB00CE602E /* ActionsCollectionViewController.swift */,
-				3345E83428BE7F1A00CE602E /* ActionCollectionViewCell.swift */,
-				335D820528BEA0B200993C3A /* ImageViewController.swift */,
-				337C87C428BFE12500643641 /* UserTVC.swift */,
-				33EA6C6228C336B000733DC0 /* UserDetailViewController.swift */,
-				33EA6C6628C3400500733DC0 /* PostsTableViewController.swift */,
-				33EA6C6B28C4D39000733DC0 /* DetailPostsViewController.swift */,
-				33EA6C7128C4FCDB00733DC0 /* CommentsTableViewController.swift */,
-				33EA6C7328C5020000733DC0 /* DetailCommentsViewController.swift */,
-				33EA6C6D28C4DFAD00733DC0 /* AlbumsTableViewController.swift */,
-				33EA6C6F28C4F6C800733DC0 /* DetailAlbumsViewController.swift */,
-				33EA6C7528C527AE00733DC0 /* TestTVC.swift */,
+				33EA6C7A28C654DF00733DC0 /* ActionsCollectionControllers */,
+				33EA6C7B28C6550500733DC0 /* ImageControllers */,
+				33EA6C7728C6548100733DC0 /* UserControllers */,
+				33EA6C7828C6549500733DC0 /* PostsControllers */,
+				33EA6C7928C654AA00733DC0 /* CommentsControllers */,
+				33FB6B4E28C91E2E00F61B84 /* AlbumsViewCintroller */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -129,6 +140,7 @@
 			children = (
 				3345E82128BE774B00CE602E /* Main.storyboard */,
 				33EA6C6428C33E9D00733DC0 /* PostAndComments.storyboard */,
+				33FB6B4C28C91A4900F61B84 /* Albums.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,12 +153,77 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		339AE05928C92B3A0080D2C9 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				339AE05A28C92B4B0080D2C9 /* Cache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		33EA6C6828C4C81B00733DC0 /* API */ = {
 			isa = PBXGroup;
 			children = (
 				33EA6C6928C4C82F00733DC0 /* Api Constants.swift */,
+				33FB6B4A28C914F300F61B84 /* NetworkService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		33EA6C7728C6548100733DC0 /* UserControllers */ = {
+			isa = PBXGroup;
+			children = (
+				337C87C428BFE12500643641 /* UserTVC.swift */,
+				33EA6C6228C336B000733DC0 /* UserDetailViewController.swift */,
+			);
+			path = UserControllers;
+			sourceTree = "<group>";
+		};
+		33EA6C7828C6549500733DC0 /* PostsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33EA6C6628C3400500733DC0 /* PostsTableViewController.swift */,
+				33EA6C6B28C4D39000733DC0 /* DetailPostsViewController.swift */,
+				33FBF09928C7CF7800452B59 /* NewPostViewController.swift */,
+			);
+			path = PostsControllers;
+			sourceTree = "<group>";
+		};
+		33EA6C7928C654AA00733DC0 /* CommentsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33EA6C7128C4FCDB00733DC0 /* CommentsTableViewController.swift */,
+				33EA6C7328C5020000733DC0 /* DetailCommentsViewController.swift */,
+			);
+			path = CommentsControllers;
+			sourceTree = "<group>";
+		};
+		33EA6C7A28C654DF00733DC0 /* ActionsCollectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3345E83228BE7EAB00CE602E /* ActionsCollectionViewController.swift */,
+				3345E83428BE7F1A00CE602E /* ActionCollectionViewCell.swift */,
+			);
+			path = ActionsCollectionControllers;
+			sourceTree = "<group>";
+		};
+		33EA6C7B28C6550500733DC0 /* ImageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				335D820528BEA0B200993C3A /* ImageViewController.swift */,
+			);
+			path = ImageControllers;
+			sourceTree = "<group>";
+		};
+		33FB6B4E28C91E2E00F61B84 /* AlbumsViewCintroller */ = {
+			isa = PBXGroup;
+			children = (
+				339AE04E28C91EE80080D2C9 /* AlbumsTableViewController.swift */,
+				339AE05028C91F290080D2C9 /* AlbumsCollectionCVC.swift */,
+				339AE05728C928E90080D2C9 /* AlbumsCollectionViewCell.swift */,
+				339AE05228C91F600080D2C9 /* PhotoViewController.swift */,
+			);
+			path = AlbumsViewCintroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +242,11 @@
 			dependencies = (
 			);
 			name = TableViewCell;
+			packageProductDependencies = (
+				33FB6B4528C8A91600F61B84 /* Alamofire */,
+				33FB6B4828C8A94A00F61B84 /* SwiftyJSON */,
+				339AE05528C927220080D2C9 /* AlamofireImage */,
+			);
 			productName = TableViewCell;
 			productReference = 3345E81828BE774B00CE602E /* TableViewCell.app */;
 			productType = "com.apple.product-type.application";
@@ -193,6 +275,11 @@
 				Base,
 			);
 			mainGroup = 3345E80F28BE774B00CE602E;
+			packageReferences = (
+				33FB6B4428C8A91600F61B84 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				33FB6B4728C8A94A00F61B84 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				339AE05428C927220080D2C9 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 3345E81928BE774B00CE602E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -208,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33EA6C6528C33E9D00733DC0 /* PostAndComments.storyboard in Resources */,
+				33FB6B4D28C91A4900F61B84 /* Albums.storyboard in Resources */,
 				3345E82828BE774C00CE602E /* LaunchScreen.storyboard in Resources */,
 				3345E82528BE774C00CE602E /* Assets.xcassets in Resources */,
 				3345E82328BE774B00CE602E /* Main.storyboard in Resources */,
@@ -222,21 +310,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				3345E81C28BE774B00CE602E /* AppDelegate.swift in Sources */,
-				33EA6C6E28C4DFAD00733DC0 /* AlbumsTableViewController.swift in Sources */,
+				339AE05828C928E90080D2C9 /* AlbumsCollectionViewCell.swift in Sources */,
 				33EA6C6C28C4D39000733DC0 /* DetailPostsViewController.swift in Sources */,
 				337C87C828BFE3EB00643641 /* UserModels.swift in Sources */,
+				339AE04F28C91EE80080D2C9 /* AlbumsTableViewController.swift in Sources */,
+				33FB6B4B28C914F300F61B84 /* NetworkService.swift in Sources */,
+				339AE05B28C92B4B0080D2C9 /* Cache.swift in Sources */,
 				33EA6C6328C336B000733DC0 /* UserDetailViewController.swift in Sources */,
-				33EA6C7628C527AE00733DC0 /* TestTVC.swift in Sources */,
 				33EA6C7428C5020000733DC0 /* DetailCommentsViewController.swift in Sources */,
 				3345E83328BE7EAB00CE602E /* ActionsCollectionViewController.swift in Sources */,
 				33EA6C6728C3400500733DC0 /* PostsTableViewController.swift in Sources */,
+				339AE05328C91F600080D2C9 /* PhotoViewController.swift in Sources */,
 				33EA6C7228C4FCDB00733DC0 /* CommentsTableViewController.swift in Sources */,
+				339AE05128C91F290080D2C9 /* AlbumsCollectionCVC.swift in Sources */,
 				33EA6C6A28C4C82F00733DC0 /* Api Constants.swift in Sources */,
 				335D820628BEA0B200993C3A /* ImageViewController.swift in Sources */,
 				3345E83528BE7F1A00CE602E /* ActionCollectionViewCell.swift in Sources */,
 				337C87C528BFE12500643641 /* UserTVC.swift in Sources */,
 				3345E81E28BE774B00CE602E /* SceneDelegate.swift in Sources */,
-				33EA6C7028C4F6C800733DC0 /* DetailAlbumsViewController.swift in Sources */,
+				33FBF09A28C7CF7800452B59 /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +546,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		339AE05428C927220080D2C9 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		33FB6B4428C8A91600F61B84 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		33FB6B4728C8A94A00F61B84 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		339AE05528C927220080D2C9 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 339AE05428C927220080D2C9 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		33FB6B4528C8A91600F61B84 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33FB6B4428C8A91600F61B84 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		33FB6B4828C8A94A00F61B84 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33FB6B4728C8A94A00F61B84 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3345E81028BE774B00CE602E /* Project object */;
 }

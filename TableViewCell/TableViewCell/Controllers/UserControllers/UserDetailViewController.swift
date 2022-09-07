@@ -50,7 +50,7 @@ class UserDetailViewController: UIViewController {
     }
     
     @IBAction func albumsButton() {
-        let storyboard = UIStoryboard(name: "PostAndComments", bundle: nil)
+        let storyboard = UIStoryboard(name: "Albums", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AlbumsTableViewController") as! AlbumsTableViewController
         vc.user = user
         navigationController?.pushViewController(vc, animated: true)

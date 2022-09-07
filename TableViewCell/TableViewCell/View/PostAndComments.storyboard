@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6C8-xc-mpR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -47,10 +47,96 @@
                             <outlet property="delegate" destination="6C8-xc-mpR" id="DJu-hX-hE4"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="7at-mf-g06">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6YF-Y9-M9Q">
+                            <connections>
+                                <segue destination="k0K-s1-yv8" kind="show" identifier="addNewPostSegue" id="9zY-OT-gmA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BmL-be-wQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-459" y="113"/>
+            <point key="canvasLocation" x="1360.8695652173915" y="112.5"/>
+        </scene>
+        <!--New Post View Controller-->
+        <scene sceneID="uJE-jw-bfn">
+            <objects>
+                <viewController storyboardIdentifier="NewPostViewController" id="k0K-s1-yv8" customClass="NewPostViewController" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BUh-kc-U2K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="fo4-mr-wrO">
+                                <rect key="frame" x="10" y="124" width="394" height="261"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGB-P8-Vkf">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your new post" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wRb-rt-ITh">
+                                        <rect key="frame" x="0.0" y="61" width="394" height="200"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="n0o-Jw-SOw"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="Pw0-qY-d1Z">
+                                <rect key="frame" x="100" y="485" width="214" height="103"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lS-mZ-qEt">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Post with URLSession"/>
+                                        <connections>
+                                            <action selector="postURLSession" destination="k0K-s1-yv8" eventType="touchUpInside" id="0Rh-GD-GcO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P63-Hc-sCc">
+                                        <rect key="frame" x="0.0" y="72" width="214" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Post with Alamofire">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.79012417793273926" green="0.92872816324234009" blue="0.67340141534805298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="postAlamofire" destination="k0K-s1-yv8" eventType="touchUpInside" id="hFA-Ps-g1H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Ph-Ob-atA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fo4-mr-wrO" firstAttribute="top" secondItem="6Ph-Ob-atA" secondAttribute="top" constant="80" id="IMQ-1y-z5c"/>
+                            <constraint firstItem="Pw0-qY-d1Z" firstAttribute="top" secondItem="fo4-mr-wrO" secondAttribute="bottom" constant="100" id="Y5t-r2-SbU"/>
+                            <constraint firstItem="fo4-mr-wrO" firstAttribute="leading" secondItem="6Ph-Ob-atA" secondAttribute="leading" constant="10" id="aes-NL-QZ1"/>
+                            <constraint firstItem="Pw0-qY-d1Z" firstAttribute="leading" secondItem="6Ph-Ob-atA" secondAttribute="leading" constant="100" id="d6F-iC-uu4"/>
+                            <constraint firstItem="6Ph-Ob-atA" firstAttribute="trailing" secondItem="fo4-mr-wrO" secondAttribute="trailing" constant="10" id="hf7-X9-iDS"/>
+                            <constraint firstItem="6Ph-Ob-atA" firstAttribute="trailing" secondItem="Pw0-qY-d1Z" secondAttribute="trailing" constant="100" id="lEK-1x-bCj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BOZ-QX-0P7"/>
+                    <connections>
+                        <outlet property="bodyTV" destination="wRb-rt-ITh" id="Umh-2l-avj"/>
+                        <outlet property="titleTF" destination="tGB-P8-Vkf" id="4iX-y9-ujb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XxH-IY-ETT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065.217391304348" y="-265.17857142857144"/>
         </scene>
         <!--Detail Posts View Controller-->
         <scene sceneID="9wB-Aq-DfK">
@@ -94,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Euk-V9-aSh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="239" y="113"/>
+            <point key="canvasLocation" x="2065.217391304348" y="442.63392857142856"/>
         </scene>
         <!--Comments Table View Controller-->
         <scene sceneID="SCe-zb-K9I">
@@ -138,7 +224,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKO-rh-jFa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="113"/>
+            <point key="canvasLocation" x="2749.275362318841" y="112.5"/>
         </scene>
         <!--Detail Comments View Controller-->
         <scene sceneID="qi5-az-Tbw">
@@ -200,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKu-H9-ce3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1659" y="113"/>
+            <point key="canvasLocation" x="3476.811594202899" y="112.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mLC-UQ-yfS">
@@ -229,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqg-5J-fah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2391" y="113"/>
+            <point key="canvasLocation" x="4210.144927536232" y="112.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gTx-27-9iV">
@@ -244,15 +330,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vki-sN-Mto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3299" y="60"/>
+            <point key="canvasLocation" x="5117.3913043478269" y="59.598214285714285"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
