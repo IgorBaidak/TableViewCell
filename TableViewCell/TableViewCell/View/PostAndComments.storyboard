@@ -263,7 +263,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Map"/>
                                 <connections>
-                                    <segue destination="emf-V9-EnN" kind="show" id="iFl-kB-1rm"/>
+                                    <segue destination="emf-V9-EnN" kind="show" identifier="goToMap" id="3uj-v2-OoL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -288,10 +288,10 @@
             </objects>
             <point key="canvasLocation" x="3476.811594202899" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--MapVC-->
         <scene sceneID="mLC-UQ-yfS">
             <objects>
-                <viewController id="emf-V9-EnN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapVC" id="emf-V9-EnN" customClass="MapVC" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ZO-2y-QdW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -312,6 +312,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="khY-BU-42V"/>
+                    <connections>
+                        <outlet property="userMap" destination="dnj-HO-ZjK" id="fCT-HJ-NAm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqg-5J-fah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

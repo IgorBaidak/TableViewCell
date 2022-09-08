@@ -67,6 +67,7 @@ class PostsTableViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "PostAndComments", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "DetailPostsViewController") as! DetailPostsViewController
         vc.posts = posts
+        vc.user = user
         navigationController?.pushViewController(vc, animated: true)
     }
     
